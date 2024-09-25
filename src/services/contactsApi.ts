@@ -4,8 +4,7 @@ import { Contact } from "../models/contact.model";
 export const contactsApi = createApi({
   reducerPath: "contactsApi",
   baseQuery: fetchBaseQuery({
-    // baseUrl: process.env.BASE_URI,
-    baseUrl: "https://66eaa11755ad32cda479bcf2.mockapi.io/api/v1",
+    baseUrl: process.env.BASE_URL,
   }),
   tagTypes: ["Contact"],
   endpoints: (builder) => ({
